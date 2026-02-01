@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Studio</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--CSS Tailwind-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="main-header p-[8px]">
+        <!--Logo-->
+        <div class="logo"></div>
+
+        <!--Navigation Bar-->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2 ml-2" href="#our-profile">Our Profile</a>
+            <a class="border rounded p-2 ml-2" href="#about-us">About Us</a>
+            <a class="border rounded p-2 ml-2" href="#contact-us">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+        <!--Home Page-->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h1 class="text-4xl font-bold mt-10" id="welcome speech">Welcome to Oops! Studio</h1>
+            <p class="mt-4 text-lg">Your one-stop solution for creative design and development.</p>
+        </section>
+
+        <hr/>
+
+        <!--Our Profile Page-->
+        <section id="our-profile" class="min-h-[500px] text-center content-center">
+            <h2 class="text-3xl font-semibold mt-10">Our Profile</h2>
+            <p class="mt-4 text-lg">At Oops! Studio, we specialize in delivering top-notch design and development services to help your business thrive in the digital world.</p>
+        </section>
+
+        <hr/>
+
+        <!--About Us Page-->
+        <section id="about-us" class="min-h-[500px] text-center content-center">
+            <h2 class="text-3xl font-semibold mt-10">About Us</h2>
+            <p class="mt-4 text-lg">Founded in 2020, Oops! Studio has been committed to providing innovative solutions that meet the unique needs of our clients. Our team of experts is dedicated to excellence and creativity.</p>
+        </section>
+
+        <hr/>
+
+        <!--Contact Us Page-->
+        <section id="contact-us" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-3xl font-semibold mt-10 text-center">Contact Us</h2>
+                <form class="mt-6 max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" for="name">Name:</label>
+                        <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" for="email">Email:</label>
+                        <input class="w-full p-2 border rounded" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-left mb-2" for="message">Message:</label>
+                        <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" type="submit" id="end speech">Submit</button>
+                    </div>
+                </form>
+            </header>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-4">
+            &copy; 2024 Oops! Studio. All rights reserved.
+        </div>
+    </footer>    
+
+    <!--JavaScript-->
+    <script src="js/script.js"></script>
+</body>
+</html>
